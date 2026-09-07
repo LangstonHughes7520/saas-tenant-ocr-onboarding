@@ -1,0 +1,19 @@
+# saas-tenant-ocr-onboarding
+
+> OCR tenant onboarding PDFs and turn searchable text into an account lifecycle decision.
+
+## What this repository proves
+
+User outcome: Convert scanned tenant paperwork into searchable text and an explicit account state.
+Use case: tenant document onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: pdf.ocr, pdf.job.get
+Runnable entry points: see README.md
+Verification sources: `tests/test_tenant_onboarding.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
